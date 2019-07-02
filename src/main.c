@@ -405,6 +405,10 @@ int main(void) {
     if (retVal == 0)
         printk("\n\n\n\n\n\n\n\n\n\n\n\n        PRESS VOL- TO SAVE KEYS TO MICROSD OR PRESS POWER TO TURN OFF THE CONSOLE");
 
+    // eliboa : memloader_usb
+    msleep(50);
+    goto progend;
+
     int currRow = video_get_row();
     const float incPixel = 1.0f/smileySize;
     const float timerToSeconds = 1.0f/1000000;
